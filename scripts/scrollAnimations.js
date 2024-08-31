@@ -6,7 +6,7 @@ const sr = ScrollReveal({
     //reset: true
 })
 
-const mediaQueryScroll = window.matchMedia('(max-width: 950px)');
+const mediaQueryScrollI = window.matchMedia('(max-width: 950px)');
 
 sr.reveal('.main-header');
     sr.reveal('.main-name', {delay: 500});
@@ -26,7 +26,7 @@ sr.reveal('.main-header');
     sr.reveal('.footer-item', {interval: 100});
     sr.reveal('.rights', {origin: 'bottom'});
 
-if (!mediaQueryScroll.matches) {
+if (!mediaQueryScrollI.matches) {
     sr.reveal('.image-salon', {origin: 'left'});
     sr.reveal('.text-container', {origin: 'right'});
     sr.reveal('.offer', {origin: 'left'});
