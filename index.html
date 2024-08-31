@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport cars</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Exo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <i class="ri-steering-line"></i>
+                <div>SportCar</div>
+            </a>
+            <div class="hidden-nav">
+                <ul class="nav-bar">
+                    <li class="nav-item"><a onclick="toHome()" class="nav-animation">Home</a></li>
+                    <li class="nav-item"><a onclick="toAbout()" class="nav-animation">About</a></li>
+                    <li class="nav-item"><a onclick="toPopular()" class="nav-animation">Popular</a></li>
+                    <li class="nav-item"><a onclick="toFeatured()" class="nav-animation">Featured</a></li>
+                </ul>
+                <i id="close-nav" class="ri-close-large-line"></i>
+            </div>
+            
+            <div class="burger-menu"><i class="ri-menu-line"></i></div>
+        </nav>
+    </header>
+    <main>
+        <section id="Home" class="home">
+            <h1 class="main-header">Choose the best car</h1>
+            <h2 class="main-name">McLaren 720S</h2>
+            <p class="main-type"><i class="ri-gas-station-fill"></i> Sport car</p>
+            <img class="main-car" src="images/mclaren-720s.png" alt="Car">
+            <div>
+                <ul class="main-stats">
+                    <li>
+                        <i class="ri-rocket-line"></i>
+                        <div class="value">342 km/h</div>
+                        <div class="index">speed</div>
+                    </li>
+                    <li>
+                        <i class="ri-dashboard-3-line"></i>
+                        <div class="value">1200 km</div>
+                        <div class="index">mileage</div>
+                    </li>
+                    <li>
+                        <i class="ri-oil-line"></i>
+                        <div class="value">4.0 L</div>
+                        <div class="index">engine</div>
+                </ul>
+            </div>
+            <button class="start">START</button>
+        </section>
+        <section id="About">
+            <div class="about">
+                <div class="image-salon">
+                    <img class="salon" src="images/salon.jpg" alt="salon">
+                    <div class="on-image">
+                        <h1>2.500+</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <h1>Sport cars of the future</h1>
+                    <p>Experience the future with high-performance sports cars from renowed brands. This vehicles feature futuristic designs and cutting edge platforms that ensure long-lasting reliability and unmatched driving excitement</p>
+                    <button>Know more</button>
+                </div>
+            </div>
+        </section>
+        <section id="Popular">
+            <div class="popular">
+                <h1 class="popular-header">Choose your car from the McLaren brand</h1>
+                <div class="flex-arrows">
+                    <button id="moveLeft"><i class="ri-arrow-left-s-line"></i></button>
+                    <div class="slider-box">
+                        <ul class="slider">
+                            <li class="slider-item">
+                                <h1>McLaren 1</h1>
+                                <p>McLaren P1</p>
+                                <img src="images/firstCar.png" alt="Car">
+                                <ul class="slider-stats">
+                                    <li>
+                                        <i class="ri-rocket-line"></i>
+                                        <div>342 km/h</div>
+                                    </li>
+                                    <li>
+                                        <i class="ri-oil-line"></i>
+                                        <div>4.0 L</div>
+                                </ul>
+                                <p class="price">300 000$</p>
+                                <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                            </li>
+                            <li class="slider-item">
+                                <h1>McLaren 2</h1>
+                                <p>McLaren P1</p>
+                                <img src="images/firstCar.png" alt="Car">
+                                <ul class="slider-stats">
+                                    <li>
+                                        <i class="ri-rocket-line"></i>
+                                        <div>342 km/h</div>
+                                    </li>
+                                    <li>
+                                        <i class="ri-oil-line"></i>
+                                        <div>4.0 L</div>
+                                </ul>
+                                <p class="price">300 000$</p>
+                                <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                            </li>
+                            <li class="slider-item">
+                                <h1>McLaren 3</h1>
+                                <p>McLaren P1</p>
+                                <img src="images/firstCar.png" alt="Car">
+                                <ul class="slider-stats">
+                                    <li>
+                                        <i class="ri-rocket-line"></i>
+                                        <div>342 km/h</div>
+                                    </li>
+                                    <li>
+                                        <i class="ri-oil-line"></i>
+                                        <div>4.0 L</div>
+                                </ul>
+                                <p class="price">300 000$</p>
+                                <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                            </li>
+                            <li class="slider-item">
+                                <h1>McLaren 4</h1>
+                                <p>McLaren P1</p>
+                                <img src="images/firstCar.png" alt="Car">
+                                <ul class="slider-stats">
+                                    <li>
+                                        <i class="ri-rocket-line"></i>
+                                        <div>342 km/h</div>
+                                    </li>
+                                    <li>
+                                        <i class="ri-oil-line"></i>
+                                        <div>4.0 L</div>
+                                </ul>
+                                <p class="price">300 000$</p>
+                                <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                            </li>
+                            <li class="slider-item">
+                                <h1>McLaren 5</h1>
+                                <p>McLaren P1</p>
+                                <img src="images/firstCar.png" alt="Car">
+                                <ul class="slider-stats">
+                                    <li>
+                                        <i class="ri-rocket-line"></i>
+                                        <div>342 km/h</div>
+                                    </li>
+                                    <li>
+                                        <i class="ri-oil-line"></i>
+                                        <div>4.0 L</div>
+                                </ul>
+                                <p class="price">300 000$</p>
+                                <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                            </li>
+                        </ul>
+                    </div>   
+                    <button id="moveRight"><i class="ri-arrow-right-s-line"></i></i></button>
+                </div>
+                
+            </div>
+        </section>
+        <section id="Features">
+            <h1 class="features-header">More features</h1>
+            <div class="features">
+                <img class="reveal-bottom" src="images/top-view.png" alt="car">
+                <ul class="info-flex">
+                    <li class="info">
+                        <h1>350</h1>
+                        <p>Km<br>Range</p>
+                    </li>
+                    <li class="info">
+                        <h1>350</h1>
+                        <p>Km<br>Range</p>
+                    </li>
+                    <li class="info">
+                        <h1>350</h1>
+                        <p>Km<br>Range</p>
+                    </li>
+                </ul>
+            </div> 
+        </section>
+        <section id="Featured">
+            <h1 class="reveal-top">Featured luxury cars</h1>
+            <ul class="choose-mark">
+                <li class="mark" id="all">All</li>
+                <li class="mark" id="McLarenB"><img id="McLarenL" src="images/mclaren.png" alt="McLaren"></li>
+                <li class="mark" id="PorscheB"><img id="PorscheL" src="images/porsche.png" alt="Porsche"></li>
+                <li class="mark" id="FerrariB"><img id="FerrariL" src="images/ferrari.png" alt="Ferrari"></li>
+            </ul>
+            <div class="grid-section">
+                <ul class="grid">
+                    <li class="slider-item">
+                        <h1>McLaren 1</h1>
+                        <p>McLaren P1</p>
+                        <img src="images/firstCar.png" alt="Car">
+                        <ul class="slider-stats">
+                            <li>
+                                <i class="ri-rocket-line"></i>
+                                <div>342 km/h</div>
+                            </li>
+                            <li>
+                                <i class="ri-oil-line"></i>
+                                <div>4.0 L</div>
+                        </ul>
+                        <p class="price">300 000$</p>
+                        <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                    </li> 
+                    <li class="slider-item">
+                        <h1>McLaren 2</h1>
+                        <p>McLaren P1</p>
+                        <img src="images/firstCar.png" alt="Car">
+                        <ul class="slider-stats">
+                            <li>
+                                <i class="ri-rocket-line"></i>
+                                <div>342 km/h</div>
+                            </li>
+                            <li>
+                                <i class="ri-oil-line"></i>
+                                <div>4.0 L</div>
+                        </ul>
+                        <p class="price">300 000$</p>
+                        <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                    </li> 
+                    <li class="slider-item">
+                        <h1>McLaren 3</h1>
+                        <p>McLaren P1</p>
+                        <img src="images/firstCar.png" alt="Car">
+                        <ul class="slider-stats">
+                            <li>
+                                <i class="ri-rocket-line"></i>
+                                <div>342 km/h</div>
+                            </li>
+                            <li>
+                                <i class="ri-oil-line"></i>
+                                <div>4.0 L</div>
+                        </ul>
+                        <p class="price">300 000$</p>
+                        <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                    </li> 
+                    <li class="slider-item">
+                        <h1>McLaren 4</h1>
+                        <p>McLaren P1</p>
+                        <img src="images/firstCar.png" alt="Car">
+                        <ul class="slider-stats">
+                            <li>
+                                <i class="ri-rocket-line"></i>
+                                <div>342 km/h</div>
+                            </li>
+                            <li>
+                                <i class="ri-oil-line"></i>
+                                <div>4.0 L</div>
+                        </ul>
+                        <p class="price">300 000$</p>
+                        <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                    </li> 
+                    <li class="slider-item">
+                        <h1>McLaren 5</h1>
+                        <p>McLaren P1</p>
+                        <img src="images/firstCar.png" alt="Car">
+                        <ul class="slider-stats">
+                            <li>
+                                <i class="ri-rocket-line"></i>
+                                <div>342 km/h</div>
+                            </li>
+                            <li>
+                                <i class="ri-oil-line"></i>
+                                <div>4.0 L</div>
+                        </ul>
+                        <p class="price">300 000$</p>
+                        <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                    </li> 
+                    <li class="slider-item">
+                        <h1>McLaren 6</h1>
+                        <p>McLaren P1</p>
+                        <img src="images/firstCar.png" alt="Car">
+                        <ul class="slider-stats">
+                            <li>
+                                <i class="ri-rocket-line"></i>
+                                <div>342 km/h</div>
+                            </li>
+                            <li>
+                                <i class="ri-oil-line"></i>
+                                <div>4.0 L</div>
+                        </ul>
+                        <p class="price">300 000$</p>
+                        <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                    </li> 
+                    <li class="slider-item">
+                        <h1>McLaren 7</h1>
+                        <p>McLaren P1</p>
+                        <img src="images/firstCar.png" alt="Car">
+                        <ul class="slider-stats">
+                            <li>
+                                <i class="ri-rocket-line"></i>
+                                <div>342 km/h</div>
+                            </li>
+                            <li>
+                                <i class="ri-oil-line"></i>
+                                <div>4.0 L</div>
+                        </ul>
+                        <p class="price">300 000$</p>
+                        <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                    </li> 
+                    <li class="slider-item">
+                        <h1>McLaren 8</h1>
+                        <p>McLaren P1</p>
+                        <img src="images/firstCar.png" alt="Car">
+                        <ul class="slider-stats">
+                            <li>
+                                <i class="ri-rocket-line"></i>
+                                <div>342 km/h</div>
+                            </li>
+                            <li>
+                                <i class="ri-oil-line"></i>
+                                <div>4.0 L</div>
+                        </ul>
+                        <p class="price">300 000$</p>
+                        <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                    </li> 
+                    <li class="slider-item">
+                        <h1>McLaren 9</h1>
+                        <p>McLaren P1</p>
+                        <img src="images/firstCar.png" alt="Car">
+                        <ul class="slider-stats">
+                            <li>
+                                <i class="ri-rocket-line"></i>
+                                <div>342 km/h</div>
+                            </li>
+                            <li>
+                                <i class="ri-oil-line"></i>
+                                <div>4.0 L</div>
+                        </ul>
+                        <p class="price">300 000$</p>
+                        <button class="shop-btn"><i class="ri-shopping-bag-2-line"></i></button>
+                    </li> 
+                </ul>
+            </div>
+        </section>
+        <section id="Offer">
+            <div class="offer">
+                <h1>Do you want to receive special offers?</h1>
+                <p>Be the first to receive all the information about our products and new cars by email by subscribing to our mailing list.</p>
+                <button>Subscribe now</button>
+            </div>
+            <img class="reveal-right" src="images/redPorsche.png" alt="Porsche">
+        </section>
+        <footer>
+            <ul class="logos">
+                <li><img class="logo-item" id="lamborghiniLogo" src="images/lamborghini.png" alt="logo"></li>
+                <li><img class="logo-item" id="audiLogo" src="images/audi.png" alt="logo"></li>
+                <li><img class="logo-item" id="ferrariLogo" src="images/ferrari.png" alt="logo"></li>
+                <li><img class="logo-item" id="mclarenLogo" src="images/mclaren.png" alt="logo"></li>
+                <li><img class="logo-item" id="porscheLogo" src="images/porsche.png" alt="logo"></li>
+                <li><img class="logo-item" id="mitsubishiLogo" src="images/mitsubishi.png" alt="logo"></li>
+            </ul>
+            <div class="footer-info">
+                <div class="footer-item">
+                    <h1>
+                        <div class="logo-footer">
+                            <i class="ri-steering-line"></i>
+                            <div>SportCar</div>
+                        </div>
+                    </h1>
+                    <p>We offer the best sport cars of the most recognized brands in the world</p>
+                </div>
+                <div class="footer-item">
+                    <h1>Company</h1>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h1>Information</h1>
+                    <ul>
+                        <li><a href="#">Request a quote</a></li>
+                        <li><a href="#">Find a dealer</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h1>Follow us</h1>
+                    <ul class="social-medias">
+                        <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                        <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rights"><i class="ri-copyright-line"></i> Bedimcode. All rights reserved</div>
+        </footer>
+        <div class="to-top">
+            <i class="ri-arrow-up-line"></i>
+        </div>
+    </main>
+    <script src="scripts/navBar.js"></script>
+    <script src="scripts/grid.js"></script>
+    <script src="scripts/buttonStart.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/scrollreveal.js"></script>
+    <script src="scripts/scrollAnimations.js"></script>
+</body>
+</html>
