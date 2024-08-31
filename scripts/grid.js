@@ -4,7 +4,7 @@ const Porche = document.getElementById('PorscheB');
 const Ferrari = document.getElementById('FerrariB');
 const gridElements = document.querySelectorAll('.slider-item');
 const grid = document.querySelector('.grid');
-const isActive = false;
+let isActive = false;
 const mediaQueryScrolling = window.matchMedia('(max-width: 600px)');
 const mediaQueryScrollingII = window.matchMedia('(max-width: 1150px)');
 
